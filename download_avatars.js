@@ -16,7 +16,7 @@ function getRepoContributors(repoOwner, repoName, cb) {
     }
   }
   //exits the programs if user does not input a repo owner or repo name.
-  if (!owner.length && !repo.length) {
+  if (!owner.length || !repo.length) {
     console.log('Please specify a repo owner followed by a repo name.');
     return;
   };
